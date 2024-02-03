@@ -1,0 +1,110 @@
+import got from './data-1.js'
+
+const arr=got;
+// function countAllPeople()
+// {
+//   let count=0;
+//   arr.houses.forEach((elemen)=>{
+//     count+=elemen.people.length
+//   })
+//   return count;
+// }
+
+// const count =countAllPeople();
+// console.log(count);
+
+
+function everyone()
+{
+    let newarr=[];
+    got.houses.forEach((log)=>{
+        log.people.forEach((names)=>{
+            newarr.push(names.name)
+        })
+    })
+    return newarr;
+}
+
+const sol=everyone();
+// console.log(sol);
+
+// got.houses[names,people,wikilink] 
+
+// function namesStartswithS()
+// {
+//     const newarr=[];
+//   got.houses.forEach((house)=>{
+//     house.people.forEach((log)=>{
+//         if(log.name.startsWith("S"))
+//         {
+//             newarr.push(log.name)
+//         }
+//     })
+//   })
+//   return newarr;
+
+// }
+
+// const newarr=namesStartswithS();
+// console.log(newarr);
+
+
+
+// function namesStartswithA()
+// {
+//     const newarr=[];
+//   got.houses.forEach((house)=>{
+//     house.people.forEach((log)=>{
+//         if(log.name.startsWith("A") || log.name.startsWith("a"))
+//         {
+//             newarr.push(log.name)
+//         }
+//     })
+//   })
+//   return newarr;
+
+// }
+
+// const newarr=namesStartswithA();
+// console.log(newarr);
+
+
+// function peopleNameOfAllHouses()
+// {
+//     return got.houses.reduce((acc,cv)=>{
+//         acc[cv.name]=cv.people.map(person=>person.name);
+//         return acc;
+//     },{})
+// }
+
+// const newarr=peopleNameOfAllHouses();
+// console.log(newarr);
+
+
+
+// function SurnameswithS()
+// {
+//     const newarr=[];
+//   got.houses.forEach((house)=>{
+
+//     house.people.forEach((people)=>{
+
+//         //    It will clear all the front names of people     
+//        const lname=people.name.split(" ").pop();
+//     //    console.log(lname.pop());
+//        if(lname.startsWith("S")){
+//             newarr.push(people.name);
+//        }
+//     })
+//   })
+//   return newarr;
+// }
+
+// const newarr=SurnameswithS();
+// console.log(newarr);
+
+
+
+
+
+
